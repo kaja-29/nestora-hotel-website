@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 @theme{
-    --default-transition-duration:0.2s;
+    --default-transition-duration:0.2s;  
 }
