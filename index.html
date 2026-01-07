@@ -7,62 +7,54 @@
     <title>NESTORA | Stay ~ Rest ~ Belong |</title>
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 
 <body class="bg-gray-200">
-    <div class=" flex items-center justify-around gap-40 bg-white drop-shadow-2xl">
+    <div class=" flex items-center justify-between lg:justify-between bg-white drop-shadow-2xl">
         <a href="#" class="flex items-center"><img src="asset/oogol-removebg-preview.png"
-                class=" w-10 h-full lg:w-30 h-20 rounded-[15%] m-2" alt="">
+                class=" w-10 h-full lg:w-30 lg:h-full rounded-[15%] m-2" alt="">
             <h1 class="text-xl md:text-3xl lg:text-5xl text-black font-extrabold">NESTORA</h1>
         </a>
         <nav>
-            <ul class="flex gap-9 ">
-                <div class="flex gap-9 items-center">
-                    <a href="#home">
-                        <li class="hover:border-b-2">Home</li>
-                    </a>
-                    <a href="#Rooms">
-                        <li class="hover:border-b-2">Rooms</li>
-                    </a>
-                    <a href="#Packages">
-                        <li class="hover:border-b-2">Packages</li>
-                    </a>
-                    <a href="#Amenities">
-                        <li class="hover:border-b-2">Amenities</li>
-                    </a>
-                    <a href="#Gallery">
-                        <li class="hover:border-b-2">Gallery</li>
-                    </a>
-                    <a href="#Contact ">
-                        <li class="hover:border-b-2">Contact </li>
-                    </a>
-                </div>
-                <div class="justify-center"><button
-                        class="bg-black text-white mr-5 text-sm h-10 w-23 rounded-4xl outline outline-2 outline-yellow-500 outline-offset-3">Book
-                        Now</button></div>
+            <ul class="absolute droper sm:z-10 p-2 bg-white top-10 -right-full flex flex-col w-full items-center gap-4 lg:flex lg:flex-row  lg:gap-9 lg:static md:static md:flex md:flex-row lg:items-center ">
+                    
+                    <li><a href="#home" class="active:text-gray-300 md:hover:border-b-2 lg:hover:border-b-2">Home</a></li>
+                    <li><a href="#Rooms" class="active:text-gray-300 md:hover:border-b-2 lg:hover:border-b-2">Rooms</a></li>
+                    <li><a href="#Packages" class="active:text-gray-300 md:hover:border-b-2 lg:hover:border-b-2">Packages</a></li>
+                    <li><a href="#Amenities" class="active:text-gray-300 md:hover:border-b-2 lg:hover:border-b-2">Amenities</a></li>
+                    <li><a href="#Gallery" class="active:text-gray-300 md:hover:border-b-2lg:hover:border-b-2">Gallery</a></li>
+                    <a href="#Contact" class="active:text-gray-300 md:hover:border-b-2 lg:hover:border-b-2">Contact</a></li>
+
+                    <li><button
+                        class="bg-black h-7 w-20 flex justify-center items-center text-white p-1 outline-1 outline-offset-1 text-xs lg:text-white lg:mr-5 lg:text-sm lg:h-8 lg:w-23 rounded-4xl lg:outline-2 outline-yellow-500 lg:outline-offset-3">Book
+                        Now</button><li></li>
             </ul>
+            <div class="hamber md:hidden flex">
+                    <i class="fa-solid fa-bars text-3xl flex justify-center items-center"></i>
+                </div>
         </nav>
     </div>
 
     <div class="home w-[95%] mx-auto">
-        <div class="relative w-full"><img src="asset/top-img.jpg" class="rounded-b-3xl" alt="">
+        <div class="relative -z-10 w-full"><img src="asset/top-img.jpg" class="rounded-b-3xl" alt="">
         <h1 class="absolute  text-lg md:text-2xl lg:text-5xl top-5 left-3 font-bold text-white animate-pulse">Experience Comfort Beyond Stay
         </h1>
         <h4 class="absolute top-13.5 left-3 lg:top-23 lg:left-3 text-sm lg:text-2xl leading-6 md:leading-10 lg:leading-13 text-white">Discover elegant rooms, peaceful nights,
             and thoughtful amenities <br>designed for your perfect getaway.</h4>
 
 
-        <div class="absolute flex gap-4 md:6 lg:gap-8 top-30 left-3 lg:top-55 lg:left-4">
+        <div class="absolute flex gap-4 md:top-38 lg:gap-8 top-30 left-3 lg:top-55 lg:left-4">
             <button
-                class="bg-sky-600 text-white text-xs outline-offset-1 h-6 w-21 p-0.5 lg:h-8 lg:w-30 lg:text-sm outline outline-2 outline-black/50 lg:outline-offset-3">Book
+                class="bg-sky-600 text-white text-xs outline-offset-1 h-6 w-21 p-0.5 lg:h-8 lg:w-30 lg:text-sm outline-2 outline-black/50 lg:outline-offset-3">Book
                 Your Stay</button>
             <button
-                class="bg-sky-600 text-white text-xs outline-offset-1 h-6 w-21 p-0.5 lg:h-8 lg:w-30  lg:text-sm outline outline-2 outline-black/50 lg:outline-offset-3">Explore
+                class="bg-sky-600 text-white text-xs outline-offset-1 h-6 w-21 p-0.5 lg:h-8 lg:w-30  lg:text-sm outline-2 outline-black/50 lg:outline-offset-3">Explore
                 Rooms</button>
         </div>
 
         <div
-            class=" absolute flex items-center lg:gap-15 p-3 w-auto lg:h-10 bottom-10 left-3 text-white text-xs h-5 gap-1 lg:text-lg text-shadow-2xs rounded-4xl lg:font-bold bg-white/20 backdrop-blur-xs border border-white/30 shadow-lg">
+            class=" absolute flex items-center md:gap-10 md:font-semibold lg:gap-15 p-3 w-auto lg:h-10 bottom-10 left-3 text-white text-xs h-5 gap-1 lg:text-lg text-shadow-2xs rounded-4xl lg:font-bold bg-white/20 backdrop-blur-xs border border-white/30 shadow-lg">
             <h1><i class="fa-solid fa-bowl-food"></i> Free Breakfast</h1>
             <h1><i class="fa-solid fa-mug-hot"></i> Night Coffee</h1>
             <h1><i class="fa-solid fa-person-swimming"></i> Swimming Pool</h1>
@@ -344,7 +336,14 @@
             <br>
             
 
-     
+<script>
+    const droper = document.querySelector(".droper");
+const hamber = document.querySelector(".hamber");
+
+hamber.addEventListener("click",()=>{
+    droper.classList.toggle("right-0")
+})
+</script>  
 
     
 </body>
