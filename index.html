@@ -7,54 +7,61 @@
     <title>NESTORA | Stay ~ Rest ~ Belong |</title>
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="script.js">
+    <link rel="icon" href="asset/oogol-removebg-preview - Copy.png">
 </head>
 
-<body class="bg-gray-200 overflow-x-hidden">
-    <div class=" flex items-center justify-between lg:justify-between bg-white drop-shadow-2xl object-cover">
-        <a href="#" class="flex items-center"><img src="asset/oogol-removebg-preview.png"
-                class=" w-10 h-full lg:w-30 lg:h-full rounded-[15%] m-2" alt="">
-            <h1 class="text-xl md:text-3xl lg:text-5xl text-black font-extrabold">NESTORA</h1>
-        </a>
-        <nav>
-            <ul class="absolute droper sm:z-10 p-2 bg-white top-10 -right-full flex flex-col w-full items-center gap-4 lg:flex lg:flex-row  lg:gap-9 lg:static md:static md:flex md:flex-row lg:items-center ">
-                    
-                    <li><a href="#home" class="active:text-gray-300 md:hover:border-b-2 lg:hover:border-b-2">Home</a></li>
-                    <li><a href="#Rooms" class="active:text-gray-300 md:hover:border-b-2 lg:hover:border-b-2">Rooms</a></li>
-                    <li><a href="#Packages" class="active:text-gray-300 md:hover:border-b-2 lg:hover:border-b-2">Packages</a></li>
-                    <li><a href="#Amenities" class="active:text-gray-300 md:hover:border-b-2 lg:hover:border-b-2">Amenities</a></li>
-                    <li><a href="#Gallery" class="active:text-gray-300 md:hover:border-b-2lg:hover:border-b-2">Gallery</a></li>
-                    <a href="#Contact" class="active:text-gray-300 md:hover:border-b-2 lg:hover:border-b-2">Contact</a></li>
+<body class="bg-gray-200 overflow-x-hidden ">
 
-                    <li><button
-                        class="bg-black h-7 w-20 flex justify-center items-center text-white p-1 outline-1 outline-offset-1 text-xs lg:text-white lg:mr-5 lg:text-sm lg:h-8 lg:w-23 rounded-4xl lg:outline-2 outline-yellow-500 lg:outline-offset-3">Book
-                        Now</button><li></li>
-            </ul>
-            <div class="hamber md:hidden flex">
-                    <i class="fa-solid fa-bars text-3xl flex justify-center items-center"></i>
-                </div>
+    <header class=" bg-white">
+        <nav class="flex justify-between items-center px-3 md:px-5 lg:px-8 py-1 md:py-0">
+            <div>
+                <img src="asset/Screenshot (51).png" class="h-10 md:h-15" alt="">
+            </div>
+
+            <div class="droper fixed lg:static left-0 bg-white/30 backdrop-blur-xs -top-full w-full lg:w-fit transition-all duration-200 ease-in-out">
+                <ul class=" flex flex-col text-sm md:text-lg lg:flex-row justify-center items-center gap-4 py-5 lg:gap-5 ">
+                    <li class="hover:text-gray-500"><a href="#home" class="hover:border-b-2">Home</a></li>
+                    <li class="hover:text-gray-500"><a href="#Rooms" class="hover:border-b-2">Rooms</a></li>
+                    <li class="hover:text-gray-500"><a href="#Packages" class="hover:border-b-2">Packages</a></li>
+                    <li class="hover:text-gray-500"><a href="#Amenities" class="hover:border-b-2">Amenities</a></li>
+                    <li class="hover:text-gray-500"><a href="#Gallery" class="hover:border-b-2">Gallery</a></li>
+                    <li class="hover:text-gray-500"><a href="#Contact" class="hover:border-b-2">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <button class="hover:scale-103 text-xs md:text-sm hover:text-black text-white text-shadow-lg bg-linear-to-r from-sky-600 via-sky-300 to-sky-600 px-1 py-1 md:px-3 md:py-2 whitespace-nowrap  rounded-lg shadow-noxl border-[0.9px] border-b-white border-r-white border-t-black border-l-black">Book Now <i class="fa-solid fa-thumbs-up text-lg"></i></button> 
+            </div>
+
+            <div class="hamber lg:hidden">
+                <i class="fa-solid fa-bars text-2xl"></i>
+                
+            </div>
         </nav>
-    </div>
+    </header>
+
 
     <div class="home w-[95%] mx-auto">
-        <div class="relative -z-10 w-full"><img src="asset/top-img.jpg" class="rounded-b-3xl" alt="">
-        <h1 class="absolute  text-lg md:text-2xl lg:text-5xl top-5 left-3 font-bold text-white animate-pulse">Experience Comfort Beyond Stay
+        <div class="relative -z-10 w-full"><img src="asset/top-img.jpg" class="h-100 md:h-130 md:w-full rounded-b-3xl object-cover" alt="">
+    
+            <h1 class="absolute text-2xl md:text-4xl lg:text-[60px] top-5 left-2 font-bold text-white animate-pulse">Experience <span class="text-sky-600">Comfort</span> Beyond Stay
         </h1>
-        <h4 class="absolute top-13.5 left-3 lg:top-23 lg:left-3 text-sm lg:text-2xl leading-6 md:leading-10 lg:leading-13 text-white">Discover elegant rooms, peaceful nights,
-            and thoughtful amenities <br>designed for your perfect getaway.</h4>
+        <h4 class="px-4 py-2 lg:px-3 shadow-noxl rounded-2xl absolute top-25 left-1 w-fit right-1 lg:top-30 lg:left-3 text-xs lg:text-lg leading- md:leading-10 lg:leading-13 text-black">Discover elegant rooms, peaceful nights,
+            and thoughtful  amenities <span class="text-white text-xs md:text-lg lg:text-2xl font-semibold">designed for your perfect getaway.</span></h4>
+        
 
 
-        <div class="absolute flex gap-4 md:top-38 lg:gap-8 top-30 left-3 lg:top-55 lg:left-4">
+        <div class="absolute flex gap-4 top-48 md:top-38 lg:gap-8 left-3 lg:top-55 lg:left-4">
             <button
-                class="bg-sky-600 text-white text-xs outline-offset-1 h-6 w-21 p-0.5 lg:h-8 lg:w-30 lg:text-sm outline-2 outline-black/50 lg:outline-offset-3">Book
+                class="bg-sky-600 text-white text-xs outline-offset-1 px-2 py-1.5 md:px-3 md:py-2 text-[10px] lg:text-sm outline-1 outline-white md:outline-black/50 md:outline-offset-3">Book
                 Your Stay</button>
             <button
-                class="bg-sky-600 text-white text-xs outline-offset-1 h-6 w-21 p-0.5 lg:h-8 lg:w-30  lg:text-sm outline-2 outline-black/50 lg:outline-offset-3">Explore
+                class="bg-sky-600 text-white text-xs outline-offset-1 px-2 py-1.5 md:px-3 md:py-2 text-[10px] lg:text-sm outline-1 outline-white md:outline-black/50 md:outline-offset-3">Explore
                 Rooms</button>
         </div>
 
         <div
-            class=" absolute flex items-center md:gap-10 md:font-semibold lg:gap-15 p-3 w-auto lg:h-10 bottom-10 left-3 text-white text-xs h-5 gap-1 lg:text-lg text-shadow-2xs rounded-4xl lg:font-bold bg-white/20 backdrop-blur-xs border border-white/30 shadow-lg">
+            class=" absolute flex flex-col md:flex-row items-center justify-center md:gap-10 md:font-semibold lg:gap-15 p-3 w-auto lg:h-10 bottom-10 left-1 whitespace-nowrap text-white text-[10px] h-auto gap-2 lg:text-lg text-shadow-2xs rounded-lg lg:font-bold bg-white/20 backdrop-blur-xs border border-white/30 shadow-lg">
             <h1><i class="fa-solid fa-bowl-food"></i> Free Breakfast</h1>
             <h1><i class="fa-solid fa-mug-hot"></i> Night Coffee</h1>
             <h1><i class="fa-solid fa-person-swimming"></i> Swimming Pool</h1>
@@ -71,9 +78,9 @@
         <div class="h-0.5 w-[29%] mt-2  md:w-[67%] bg-black mx-auto rounded-2xl"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[200px] md:auto-rows-[240px] lg:auto-rows-[270px] gap-3 px-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 auto-rows-[210px] md:auto-rows-[240px] lg:auto-rows-[270px] gap-3 px-5">
 
-            <div class="group relative overflow-hidden">
+            <div class="group  relative overflow-hidden">
                 <img src="asset2/small-house.jpg"
                     class="w-full h-full rounded-tl-2xl object-cover group-hover:scale-97 transition-transform group-hover:grayscale group-hover:blur-[2px] ease-out"
                     alt="">
@@ -97,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="group relative lg:row-span-2 h-full overflow-hidden">
+            <div class="group relative h-full overflow-hidden">
                 <img src="asset2/large-img.jpg"
                     class="w-full h-full rounded-tr-2xl rounded-br-2xl object-cover group-hover:scale-97 transition-transform group-hover:grayscale group-hover:blur-[2px] ease-out"
                     alt="">
@@ -109,31 +116,33 @@
                 </div>
             </div>
 
-            <div class="col-span-2  h-auto rounded-bl-2xl bg-gray-300 hover:bg-gray-200 hover:scale-101 transition-transform">
+            <div class="rounded-bl-2xl bg-gray-300 hover:bg-gray-200 hover:scale-101 transition-transform">
                 <div class="description p-3 space-y-4">
                     <div class="flex justify-between">
-                        <h1 class="bg-white pt-1 pb-1 pl-2 pr-2 rounded-lg font-bold text-xs text-green-600">FOR RENT
+                        <h1 class="bg-white p-1 whitespace-nowrap flex items-center rounded-lg font-bold text-xs text-sky-600">FOR RENT
                         </h1>
-                        <h1 class="text-gray-500">4 Beds | 3 Baths | 2500 sqft</h1>
+                        <p class="flex items-center text-xs md:text-sm lg:text-lg text-gray-500">4 Beds | 3 Baths | 2500 sqft</p>
                     </div>
                     <div>
-                        <h1 class="text-3xl font-bold">Deluxe Room</h1>
+                        <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">Deluxe Room</h1>
                     </div>
-                    <div class="flex item-center justify-between">
-                        <h1 class="text-2xl">$1,900<span class="text-gray-500">/week</span> </h1>
-                        <h1 class="flex gap-1 items-center justify-center bg-sky-600/80 h-8 text-white text-sm p-1 rounded-lg">
+                    <div class="flex flex-col md:flex-row gap-3 justify-between">
+                        <h1 class="text-lg md:text-xl lg:text-2xl">$1,900<span class="text-gray-500 text-lg md:text-xl lg:text-2xl">/week</span> </h1>
+                        <h1 class="flex gap-1 items-center justify-start md:justify-center bg-sky-600/80 whitespace-nowrap text-white text-sm p-1 rounded-lg">
                             <i class="fa-solid fa-circle-check"></i>Compliment of Balcony Camp</h1>
                     </div>
-                    <div class="flex items-center gap-1.5"><i class="fa-solid fa-star"></i><i
+                    <div class="flex items-center  gap-1.5"><i class="fa-solid fa-star"></i><i
                             class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                             class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
-                        <div> <span class="text-gray-600">497 Reviews</span></div>
+                        <div><span class="flex items-center text-gray-600 text-xs md:text-sm lg:text-lg">497 Reviews</span></div>
                     </div>
                     <div class="flex justify-between items-center">
-                        <h1 class="text-blue-900 text-sm underline font-semibold pl-1">View More Detail</h1>
-                        <div class="flex text-white gap-5"><button class="bg-black h-9 w-25">Call Us</button><button
-                                class="bg-black h-9 w-25">Book Now</button></div>
+                        <h1 class="text-blue-900 text-xs md:text-sm underline font-semibold pl-1">View More Detail</h1>
+                        <div class="flex justify-center items-center text-white gap-3 md:gap-5">
+                        <button class="bg-black px-5 py-2">Call Us</button>
+                        <button class="bg-black px-5 py-2">Call Us</button>
                     </div>
+                </div>
                 </div>
             </div>
         </div> 
@@ -333,18 +342,15 @@
                         </div>
             </div>
 
-            <br>
+        <script>
+            const droper = document.querySelector('.droper');
+            const hamber = document.querySelector('.hamber');
             
+        
 
-<script>
-    const droper = document.querySelector(".droper");
-const hamber = document.querySelector(".hamber");
-
-hamber.addEventListener("click",()=>{
-    droper.classList.toggle("right-0")
-})
-</script>  
-
-    
+            hamber.addEventListener("click",()=>{
+                droper.classList.toggle("top-12");
+            })
+        </script>   
 </body>
 </html>
