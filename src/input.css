@@ -2,5 +2,9 @@
 
 @theme{
     --shadow-noxl: 4px 4px 4px rgba(0,0,0,0.7), inset 3px 3px 4px rgba(255,255,255,0.7);
+    --mytext-shadow: 2px 2px 3px rgba(255,255,255,0.7);
+}
 
+.my-own-text-shad{
+    text-shadow: -1px -1px 2px rgb(255, 255, 255),1px 1px 2px rgb(255, 255, 255),-1px -1px 2px rgb(255, 255, 255);
 }
