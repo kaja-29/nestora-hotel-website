@@ -12,7 +12,7 @@
 
 <body class="bg-gray-200 overflow-x-hidden ">
 
-    <header class="sticky top-0 bg-white">
+    <header class="z-999 sticky top-0 bg-white">
         <nav class="flex justify-between items-center px-3 py-2 md:px-5 lg:px-8  md:py-0">
             <div>
                 <img src="asset/Screenshot (51).png" class="h-12 md:h-15" alt="">
@@ -177,9 +177,10 @@
         <div class="h-0.5 w-[96%] bg-black mx-auto my-10 rounded-2xl"></div>
         <!--------------------------second house detail below---------------------------------------->
 
-        <div class="grid grid-cols-7 auto-rows-[270px] gap-3 h-full w-full mx-auto pl-5 pr-5 mb-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-7 auto-rows-[200px] md:auto-rows-[220px] lg:auto-rows-[270px] gap-3 h-full w-full mx-auto pl-5 pr-5 mb-10">
 
-            <div class="group col-span-2 row-span-2 h-full relative overflow-hidden">
+            <div class="group col-span-1 md:col-span-2 lg:col-span-2 row-span-1 lg:row-span-2 relative h-full overflow-hidden">
+
                 <img src="asset2/second-h-left.jpg"
                     class=" w-full h-full rounded-tl-2xl rounded-bl-2xl object-cover group-hover:scale-97 transition-transform group-hover:grayscale group-hover:blur-[2px] ease-out"
                     alt="">
@@ -204,7 +205,8 @@
                 </div>
             </div>
 
-            <div class="group col-span-2 row-span-2 relative h-full overflow-hidden">
+            <div class="group col-span-1 md:col-span-2 lg:col-span-2 row-span-1 lg:row-span-2 relative h-full overflow-hidden">
+
                 <img src="asset2/second-h-right.jpg"
                     class="w-full h-full rounded-tr-2xl rounded-br-2xl object-cover group-hover:scale-97 transition-transform group-hover:grayscale group-hover:blur-[2px] ease-out"
                     alt="">
@@ -218,35 +220,46 @@
             </div>
 
             <div
-                class="house-description-2 col-span-3 h-auto w-full bg-gray-300 hover:bg-gray-200  hover:scale-101 transition-transform">
-                <div class="description p-3 space-y-4">
+                class="rounded-bl-2xl col-span-3 h-fit md:h-fit bg-gray-300 hover:bg-gray-200 hover:scale-101 transition-transform">
+                <div class="description-2 p-3 space-y-2 md:space-y-4">
                     <div class="flex justify-between">
-                        <h1 class="bg-white pt-1 pb-1 pl-2 pr-2 rounded-lg font-bold text-xs text-green-600">FOR RENT
+                        <h1
+                            class="bg-white px-1 py-0.75 whitespace-nowrap flex items-center rounded-md font-bold text-[10px] md:text-sm text-sky-600">
+                            FOR RENT
                         </h1>
-                        <h1 class="text-gray-500"> 4 Beds | 4 Baths | 4500 sqft</h1>
+                        <p class="flex items-center text-xs md:text-sm lg:text-lg text-gray-500">4 Beds | 3 Baths | 2500
+                            sqft</p>
                     </div>
                     <div>
-                        <h1 class="text-3xl font-bold">Execution Room</h1>
+                        <h1 class="flex items-center text-xl md:text-3xl lg:text-4xl font-bold">Deluxe Room</h1>
                     </div>
-                    <div class="flex flex-row items-center justify-between">
-                        <h1 class="text-2xl">$3,900<span class="text-gray-500">/week</span> </h1>
+                    <div class="flex flex-col md:flex-row gap-2 md:gap-3 justify-between">
+                        <h1 class="flex text-lg md:text-xl lg:text-2xl">$1,900<span
+                                class="text-gray-500 text-lg md:text-xl lg:text-2xl">/week</span> </h1>
                         <h1
-                            class="flex flex-col gap-1 justify-center bg-sky-600/80 h-auto text-white text-sm p-1 rounded-lg">
+                            class="flex flex-col gap-1 w-fit justify-start md:justify-center bg-sky-600/80 whitespace-nowrap text-white text-sm md:text-xs lg:text-[15px] p-1 rounded-lg">
                             <div class="flex items-center gap-1"><i class="fa-solid fa-circle-check"></i>Compliment of
-                                Balcony Camp </div>
+                                Balcony Camp</div>
                             <div class="flex items-center gap-1"><i class="fa-solid fa-circle-check"></i>Pool Access +
                                 Snacks </div>
                         </h1>
                     </div>
-                    <div class="flex items-center gap-1.5"><i class="fa-solid fa-star"></i><i
+                    <div class="flex items-center text-xs md:text-lg gap-1 md:gap-1.5"><i
                             class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
-                        <div> <span class="text-gray-600">17k Reviews</span></div>
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                        <div><span class="flex items-center text-gray-600 text-xs md:text-sm lg:text-lg">497
+                                Reviews</span></div>
                     </div>
                     <div class="flex justify-between items-center">
-                        <h1 class="text-blue-900 text-sm underline font-semibold pl-1">View More Detail</h1>
-                        <div class="flex text-white gap-5"><button class="bg-black h-9 w-25">Call Us</button><button
-                                class="bg-black h-9 w-25">Book Now</button></div>
+                        <h1 class="text-blue-900 text-[10px] md:text-sm underline font-semibold pl-1">View More Detail
+                        </h1>
+                        <div class="flex justify-center items-center text-white gap-3 md:gap-4 ">
+                            <button class="bg-black  px-3 py-2 sm:px-6 sm:py-2 md:px-6 md:py-2 lg:px-6 lg:py-2 text-xs md:text-sm">Call
+                                Us</button>
+                            <button class="bg-black px-3 py-2 sm:px-6 sm:py-2 md:px-6 md:py-2 lg:px-6 lg:py-2 text-xs md:text-sm">Call
+                                Us</button>
+                        </div>
                     </div>
                 </div>
             </div>
