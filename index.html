@@ -425,7 +425,7 @@
 
     <div class="fourth w-[95%] h-full mx-auto bg-white rounded-3xl mb-10">
         <div class="main">
-            <div class="py-5 px-5 md:py-3 md:px-5 flex flex-col gap-1 md:gap-3">
+            <div class="py-6 px-5 md:py-6 md:px-10 flex flex-col gap-2 md:gap-3">
                 <div class="flex justify-between gap-4 items-center">
                     <div  
                     class="bg-black/50 h-0.25 w-full ">
@@ -480,27 +480,111 @@
                     <p class="text-center text-gray-600">Unwind and recharge in our swimming pool, designed for relaxed evenings and refreshing breaks from your routine.</p>
                 </div>
             </div>
+            </div>
+            </div>
 
+    <div class="fourth w-[95%] h-full mx-auto bg-white mb-5">
+           
+            <div class="slide-container relative w-[full] md:w-[50%]">
 
+                <div class="slide-item"><img src="asset2/sli-1.jpg" class="h-full w-full object-cover" alt=""></div>
+                <div class="slide-item hidden"><img src="asset2/sli-2.jpg" class="h-full w-full object-cover" alt=""></div>
+                <div class="slide-item hidden"><img src="asset2/sli-3.jpg" class="h-full w-full object-cover" alt=""></div>
+                <div class="slide-item hidden"><img src="asset2/sli-4.jpg" class="h-full w-full object-cover" alt=""></div>
+                <div class="slide-item hidden"><img src="asset2/sli-5.jpg" class="h-full w-full object-cover" alt=""></div>
 
-        </div>
+                <div class="absolute top-[50%] w-full text-2xl text-white flex justify-between px-3">
+                <button class="prevbtn bg-black/50"><i class=" fa-solid fa-caret-left"></i></button>
+                <button class="nxtbtn bg-black/50"><i class=" fa-solid fa-caret-right"></i></button>
+                
+                </div>
+
+            
+            
+           </div>     
     </div>
+
+
+       
 
         <script>
             const droper = document.querySelector('.droper');
             const hamber = document.querySelector('.hamber');
             const reversehamber = document.querySelector('.reverse-hamber');
-
-
-
-
-            hamber.addEventListener("click", () => {
+            hamber.addEventListener("click",() => {
                 droper.classList.toggle("right-0");
             })
 
-            reversehamber.addEventListener("click", () => {
+            reversehamber.addEventListener("click",() => {
                 droper.classList.toggle("right-0")
             })
+
+            // -------- imagesscrolling logic -----//
+            let slidepostion = 0;
+            const slider = document.querySelectorAll(".slide-item");
+            const totalslider = slider.length;
+            const prevbtn = document.querySelector(".prevbtn");
+            const nxtbtn = document.querySelector(".nxtbtn");
+            const slidercontainer = docuemnt.querySelector(".slide-container");
+
+            let invalid;
+
+            function Autoslide(){
+                invalid = setInterval(nextslide,3000);
+            }
+
+            function stopslide(){
+                clearInterval(invalid);
+            }
+
+            function restslide(){
+                Autoslide();
+                stopslide();
+            }
+            
+            function updateposition(){
+                slider.forEach(slide=>{
+                    slide.classList.add("hidden");
+                });
+                slider[slidepostion].classList.remove("hidden");
+            }
+
+            function previouslide(){
+                if(slidepostion===0){
+                    slidepostion=totalslider-1
+                }
+                else{
+                    slidepostion--
+                }
+                updateposition();
+            }
+
+            function nextslide(){
+                if(slidepostion===totalslider-1){
+                    slidepostion=0
+                }
+                else{
+                    slidepostion++
+                }
+                updateposition();
+            }
+
+             prevbtn.addEventListener("click",function(){
+                restslide();
+                previouslide();
+            })
+
+            nxtbtn.addEventListener("click",function(){
+                restslide();
+                nextslide();
+            })
+
+            slidercontainer.addEventListener("mouseenter",Autoslide);
+            slidercontainer.addEventListener("mouseout",stopslide);
+
+            updateposition();
+            Autoslide();
+
         </script>
 
     
