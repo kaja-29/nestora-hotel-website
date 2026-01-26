@@ -444,37 +444,37 @@
             </div>
 
             <div class="specs px-5 md:pt-3 pb-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                <div class="flex p-4 flex-col items-center rounded-2xl hover:outline-[1.5px] outline-cyan-500" >
+                <div class="flex p-4 flex-col items-center rounded-2xl shadow-md hover:shadow-xl">
                     <img src="svg/bed-bedroom-furniture-households-sleep-svgrepo-com.svg" class="h-18 object-contain" alt="">
                     <h1 class="font-bold text-lg">Double Story Beds</h1>
                     <p class="text-center text-gray-600">Thoughtfully designed double-story beds provide personal space, comfort, and privacy without compromising on room openness.</div>
 
-                 <div class="flex p-4 flex-col items-center rounded-2xl hover:outline-[1.5px] outline-cyan-500" >
+                 <div class="flex p-4 flex-col items-center rounded-2xl shadow-md hover:shadow-xl" >
                     <img src="svg/free-wifi-signal-svgrepo-com.svg" class="h-18 object-contain" alt="">
                     <h1 class="font-bold text-lg">Free Wi-Fi</h1>
                     <p class="text-center text-gray-600">Stay connected at all times with high-speed Wi-Fi, perfect for work, streaming, or staying in touch with loved ones.</p>
                 </div>
 
-                 <div class="flex p-4 flex-col items-center rounded-2xl hover:outline-[1.5px] outline-cyan-500">
+                 <div class="flex p-4 flex-col items-center rounded-2xl shadow-md hover:shadow-xl">
                     <img src="svg/tv-svgrepo-com.svg" class="h-18 object-contain" alt="">
                     <h1 class="font-bold text-lg">Television</h1>
                     <p class="text-center text-gray-600">Enjoy your favorite shows and entertainment on a flat-screen television, ideal for relaxing after a long day.</p>
                 </div>
 
-                 <div class="flex p-4 flex-col items-center rounded-2xl hover:outline-[1.5px] outline-cyan-500">
+                 <div class="flex p-4 flex-col items-center rounded-2xl shadow-md hover:shadow-xl">
                     <img src="svg/laundry-machine-svgrepo-com.svg" class="h-18 object-contain" alt="">
                     <h1 class="font-bold text-lg">Laundry</h1>
                     <p class="text-center text-gray-600">On-site laundry facilities are available to keep your stay effortless and fresh, whether you’re here for a weekend or a longer visit.</p>
                 </div>
 
 
-                 <div class="flex p-4 flex-col items-center rounded-2xl hover:outline-[1.5px] outline-cyan-500">
+                 <div class="flex p-4 flex-col items-center rounded-2xl shadow-md hover:shadow-xl">
                     <img src="svg/bath-bathtub-svgrepo-com.svg" class="h-18 object-contain" alt="">
                     <h1 class="font-bold text-lg">Bathroom</h1>
                     <p class="text-center text-gray-600">Clean, well-maintained bathrooms with modern fittings ensure a refreshing and hygienic experience throughout your stay.</p>
                 </div>
 
-                 <div class="flex p-4 flex-col items-center rounded-2xl hover:outline-[1.5px] outline-cyan-500">
+                 <div class="flex p-4 flex-col items-center rounded-2xl shadow-md hover:shadow-xl">
                     <img src="svg/swimming-swim-svgrepo-com.svg" class="h-18 object-contain" alt="">
                     <h1 class="font-bold text-lg">Swimming Pool</h1>
                     <p class="text-center text-gray-600">Unwind and recharge in our swimming pool, designed for relaxed evenings and refreshing breaks from your routine.</p>
@@ -485,29 +485,68 @@
 
     <div class="fourth w-[95%] h-full mx-auto bg-white mb-5">
            
-            <div class="slide-container relative w-[full] md:w-[50%]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="slide-container relative w-full h-[280px] md:h-[360px] lg:h-[400px] overflow-hidden">
 
-                <div class="slide-item"><img src="asset2/sli-1.jpg" class="h-full w-full object-cover" alt=""></div>
-                <div class="slide-item hidden"><img src="asset2/sli-2.jpg" class="h-full w-full object-cover" alt=""></div>
-                <div class="slide-item hidden"><img src="asset2/sli-3.jpg" class="h-full w-full object-cover" alt=""></div>
-                <div class="slide-item hidden"><img src="asset2/sli-4.jpg" class="h-full w-full object-cover" alt=""></div>
-                <div class="slide-item hidden"><img src="asset2/sli-5.jpg" class="h-full w-full object-cover" alt=""></div>
-
-                <div class="absolute top-[50%] w-full text-2xl text-white flex justify-between px-3">
-                <button class="prevbtn bg-black/50"><i class=" fa-solid fa-caret-left"></i></button>
-                <button class="nxtbtn bg-black/50"><i class=" fa-solid fa-caret-right"></i></button>
                 
+                    <div class="slide-item h-full min-w-full absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out"><img src="asset2/sli-1.jpg" class="h-full w-full object-cover" alt=""></div>
+                    <div class="slide-item h-full min-w-full absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"><img src="asset2/sli-2.jpg" class="h-full w-full object-cover" alt=""></div>
+                    <div class="slide-item h-full min-w-full absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"><img src="asset2/sli-3.jpg" class="h-full w-full object-cover" alt=""></div>
+                    <div class="slide-item h-full min-w-full absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"><img src="asset2/sli-4.jpg" class="h-full w-full object-cover" alt=""></div>
+                    <div class="slide-item h-full min-w-full absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out"><img src="asset2/sli-5.jpg" class="h-full w-full object-cover" alt=""></div>
+
+
+                    <div class="absolute inset-0 text-lg md:text-2xl text-white flex items-center justify-between px-3">
+                    <button class="prevbtn bg-black/50"><i class=" fa-solid fa-caret-left"></i></button>
+                    <button class="nxtbtn bg-black/50"><i class=" fa-solid fa-caret-right"></i></button>
+                    </div>
+
+                    <div class="dot-container cursor-pointer grid grid-flow-col w-full gap-4 md:gap-5 justify-center absolute bottom-2">
+                    <div class="dot bg-black/50 h-1 w-2.5 md:h-1.5 md:w-4 rounded-full"></div>
+                    <div class="dot bg-black/50 h-1 w-2.5 md:h-1.5 md:w-4 rounded-full"></div>
+                    <div class="dot bg-black/50 h-1 w-2.5 md:h-1.5 md:w-4 rounded-full"></div>
+                    <div class="dot bg-black/50 h-1 w-2.5 md:h-1.5 md:w-4 rounded-full"></div>
+                    <div class="dot bg-black/50 h-1 w-2.5 md:h-1.5 md:w-4 rounded-full"></div>
+                    </div>
+            </div>
+
+                <div class="text-container relative grid grid-cols-1 justify-center items-center bg-cyan-600">
+
+                <div class="text-item p-5 absolute flex flex-col items-center justify-center opacity-100 transition-opacity duration-1000 ease-in-out">
+                    <div class="text-2xl">Steps Away from the Shore</div>
+                    <div class="text-5xl text-white font-bold leading-20">Wake up to ocean breezes and endless blue horizons...</div>
                 </div>
 
-            
+                <div class="text-item p-5 absolute flex flex-col items-center justify-center opacity-0 transition-opacity duration-1000 ease-in-out">
+                    <div>Refresh • Relax • Rejuvenate</div>
+                    <div>Take a refreshing dip or lounge poolside under open skies...</div>
+                </div>
+
+                <div class="text-item p-5 absolute flex flex-col items-center justify-center opacity-0 transition-opacity duration-1000 ease-in-out">
+                    <div>Your Private Outdoor Escape</div>
+                    <div>Unwind in a peaceful outdoor setting surrounded by greenery...</div>
+                </div>
+
+                <div class="text-item p-5 absolute flex flex-col items-center justify-center opacity-0 transition-opacity duration-1000 ease-in-out">
+                    <div>Secure & Spacious Parking</div>
+                    <div>Enjoy stress-free arrivals with our well-lit, on-site parking facility...</div>
+                </div>
+
+                <div class="text-item p-5 absolute flex flex-col items-center justify-center opacity-0 transition-opacity duration-1000 ease-in-out">
+                    <div>Thoughtfully Curated Dining</div>
+                    <div>Savor freshly prepared meals in a warm and inviting setting...</div>
+                </div>
+                </div>
+
+                
+            </div>
             
            </div>     
-    </div>
-
-
-       
-
+    
+        
         <script>
+
+            //----------Navbar hover ---------//
             const droper = document.querySelector('.droper');
             const hamber = document.querySelector('.hamber');
             const reversehamber = document.querySelector('.reverse-hamber');
@@ -519,35 +558,50 @@
                 droper.classList.toggle("right-0")
             })
 
-            // -------- imagesscrolling logic -----//
+            // -------- imagesscrolling-----//
             let slidepostion = 0;
+            let textposition = 0;
             const slider = document.querySelectorAll(".slide-item");
             const totalslider = slider.length;
             const prevbtn = document.querySelector(".prevbtn");
             const nxtbtn = document.querySelector(".nxtbtn");
-            const slidercontainer = docuemnt.querySelector(".slide-container");
+            const dotcontainer = document.querySelector(".dot-container");
+            const track = document.querySelector(".slide-track")
+            const dots = document.querySelectorAll(".dot");
+            const textitem = document.querySelectorAll(".text-item");
+            const totaltext = textitem.length;
+            
+            
+            dots[slidepostion].classList.add("bg-white");
 
-            let invalid;
-
-            function Autoslide(){
-                invalid = setInterval(nextslide,3000);
-            }
-
-            function stopslide(){
-                clearInterval(invalid);
-            }
-
-            function restslide(){
-                Autoslide();
-                stopslide();
-            }
+            dots.forEach((dot,index)=>{
+                dot.addEventListener("click",function(){
+                    slidepostion = index;
+                    updateposition();
+                });
+            });
             
             function updateposition(){
-                slider.forEach(slide=>{
-                    slide.classList.add("hidden");
+                slider.forEach((slide,index)=>{
+                    slide.classList.toggle("opacity-100",index===slidepostion);
+                    slide.classList.toggle("opacity-0",index!==slidepostion);
                 });
-                slider[slidepostion].classList.remove("hidden");
+
+            function updatepositiontext(){
+                textitem.forEach((text,index)=>{
+                    text.classList.toggle("opacity-100",index===textposition);
+                    text.classList.toggle("opacity-0",index!==textposition);
+                })
             }
+
+                dots.forEach(dot=>{
+                    dot.classList.remove("bg-white");
+                });
+
+                dots[slidepostion].classList.add("bg-white");
+            }
+
+
 
             function previouslide(){
                 if(slidepostion===0){
@@ -570,20 +624,32 @@
             }
 
              prevbtn.addEventListener("click",function(){
-                restslide();
                 previouslide();
             })
 
             nxtbtn.addEventListener("click",function(){
-                restslide();
                 nextslide();
             })
 
-            slidercontainer.addEventListener("mouseenter",Autoslide);
-            slidercontainer.addEventListener("mouseout",stopslide);
+            setInterval(()=>{
+                if(slidepostion===totalslider-1){
+                    slidepostion=0;
+                }
+                else{
+                    slidepostion++
+                }
+                updateposition();
+            },3000)
 
-            updateposition();
-            Autoslide();
+            setInterval(()=>{
+                if(textposition===totaltext-1){
+                    textposition=0;
+                }
+                else{
+                    textposition++
+                }
+                updatepositiontext();
+            },3000)
 
         </script>
 
