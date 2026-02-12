@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+    --primarycol: 0 146 184;
+}
+
+
+
+@theme {
+    --shadow-kons: 5px 5px 5px rgba(0, 0, 0, 0.2), -5px -5px 5px rgba(0, 0, 0, 0.2);
+    --shadow-noxl: 4px 4px 4px rgba(0, 0, 0, 0.7), inset 3px 3px 4px rgba(255, 255, 255, 0.7);
+    --text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+
+.my-own-text-shad {
+    text-shadow: -1px -1px 2px rgb(255, 255, 255), 1px 1px 2px rgb(255, 255, 255), -1px -1px 2px rgb(255, 255, 255);
+}
+
+.animation-text {
+    animation: text-ani 0.9s ease-out forwards;
+}
+
+.animation-text-delay {
+    animation: text-ani 0.9s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes text-ani {
+    from {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
+
+/* ---------------------- */
+.all-heading-delay {
+    animation: head-ani;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    animation-timeline: view();
+    animation-range: entry 10% cover 35%;
+}
+
+
+@keyframes head-ani {
+    from {
+        opacity: 0;
+        filter: blur(2px);
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
